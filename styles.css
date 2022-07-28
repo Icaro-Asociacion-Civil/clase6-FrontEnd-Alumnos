@@ -36,3 +36,14 @@ img {
 .api-container {
     display: flex;
 }
+
+.formulario_input_error{
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario_input_error-activo {
+	display: block;
+    color: red;
+}

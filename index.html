@@ -5,22 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Clase 6</title>
+    <title>Taller Clase 6</title>
   </head>
   <body>
     <div>
       <h1>Taller clase 6</h1>
       <form id="Taller" class="container">
+        
+      <div id="grupo_nombre">
         <label for="">¿Cual es tu nombre completo?</label>
         <input
           type="text"
+          class="Taller__input"
           placeholder="Nombre y apellido"
-          name="name"
+          name="nombre"
+          id="nombre"
           required
         />
+        <p class="formulario_input_error"> Tenés que agregar Nombre y Apellido Completo y Real</p>
+      </div>
+
+      <div id="grupo_edad">
         <label for="">¿Cual es tu edad?</label>
-        <input type="number" placeholder="Edad" name="age" required />
-        <input type="submit" value="Enviar" id="submit" />
+        <input type="number" class="Taller__input" placeholder="Edad" name="edad" id="edad" required />
+        <p class="formulario_input_error"> Tenés que poner una edad entre 1 y 100 años</p>
+      </div>
+
+        <input type="submit" class="Taller__input" value="Enviar" id="submit" />
+      
       </form>
     </div>
 
@@ -31,6 +43,7 @@
         src="https://www.pngmart.com/files/17/Cartoon-The-Simpsons-PNG-Transparent-Image.png"
         alt="bart-simpson"
       />
+    
       <script src="./script.js"></script>
     </div>
   </body>
